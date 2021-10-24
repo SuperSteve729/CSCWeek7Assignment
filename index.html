@@ -1,0 +1,66 @@
+<!--Alberto Perez II-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Program</title>
+</head>
+<body>
+    <table>
+        <td><img src="UATspaceLogo-1.jpg" alt="UAT Space Mission 3 Logo"></td>
+        <td><h1>UAT Space Program</h1></td>
+
+    </table>
+
+    <table id ="data" width = "70%" border="2">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id = "tab_Seconds"><td>Time Elapsed</td><td>15 seconds</td></tr>
+            <tr id = "tab_Latitude"><td>Latitude</td><td>0</td></tr>
+            <tr id = "tab_Longitude"><td>Longitude</td><td>0</td></tr>
+            <tr id = "tab_GPS"><td>GPS Altitude</td><td>0</td></tr>
+            <tr id = "tab_BMPAltitude"><td>BMP Sensor Altitude</td><td>30383.04</td></tr>
+            <tr id = "tab_BMPPressure"><td>BMP Sensor Pressure</td><td>2.34</td></tr>
+            <tr id = "tab_BMPTemp"><td>BMP Sensor Temperature</td><td>0</td></tr>
+            <tr id = "tab_digitalSensorTemp"><td>Digital Sensor Temperature</td><td>24.12</td></tr>
+            <tr id = "tab_CSSSensorTemp"><td>CSS Sensor Temperature</td><td>25</td></tr>
+            <tr id = "tab_CSSSensorECO2"><td>CSS Sensor eCO2</td><td>400</td></tr>
+            <tr id = "tab_CSSSensorTVOC"><td>CSS Sensor TVOC</td><td>0</td></tr>
+            <tr id = "tab_UV"><td>UV</td><td>0</td></tr>
+            <tr id = "tab_accelX"><td>Accel X</td><td>-0.87</td></tr>
+            <tr id = "tab_accelY"><td>Accel Y</td><td>-0.02</td></tr>
+            <tr id = "tab_accelZ"><td>Accel Z</td><td>9.61</td></tr>
+            <tr id = "tab_magnetX"><td>Magnetic X</td><td>0.13</td></tr>
+            <tr id = "tab_magnetY"><td>Magnetic Y</td><td>0.57</td></tr>
+            <tr id = "tab_magnetZ"><td>Magnetic Z</td><td>-0.24</td></tr>
+            <tr id = "tab_gyroX"><td>Gyro X</td><td>4.66</td></tr>
+            <tr id = "tab_gyroY"><td>Gyro Y</td><td>0.01</td></tr>
+            <tr id = "tab_gyroZ"><td>Gyro Z</td><td>-0.4</td></tr>
+        </tbody>
+
+    </table>
+    <br/>
+    <button id = "startButton" class="button" onclick="start()">Start</button>
+    <button id = "stopButton" class="button" disabled = true onclick="stop()">Stop</button>
+
+    <br>
+    <p id= "countDownTimer">
+        Waiting for start...
+    </p>
+    
+    <button onclick="playCraps()">Play Craps!</button>
+    <br/>
+    <p id = "die1"> Die 1... </p>
+    <p id = "die2"> Die 2... </p>
+    <p id = "sum"> Sum... </p>
+    <p id = "crapsResults"> Results... </p>
+
+</body>
+</html>
